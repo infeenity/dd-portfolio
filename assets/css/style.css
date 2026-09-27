@@ -272,6 +272,9 @@ p {
     border-radius: 14px;
 
     background: white;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card.featured {
@@ -306,6 +309,88 @@ p {
     color: #65e6c4;
 }
 
+/* ---------- IMAGE TOOLKIT PROJECT ---------- */
+
+.image-tool-visual {
+    margin: 30px 0 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.visual-image {
+    border: 2px solid #65e6c4;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #65e6c4;
+}
+
+.large-image {
+    width: 120px;
+    height: 85px;
+}
+
+.small-image {
+    width: 85px;
+    height: 60px;
+}
+
+.visual-image span {
+    font-family: monospace;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.visual-image small {
+    margin-top: 6px;
+
+    color: #ccccdd;
+    font-size: 0.65rem;
+}
+
+.visual-arrow {
+    color: #65e6c4;
+    font-size: 1.7rem;
+}
+
+.compression-result {
+    margin-bottom: 25px;
+
+    color: #65e6c4;
+
+    font-family: monospace;
+    font-size: 0.85rem;
+
+    text-align: center;
+}
+
+.project-learning {
+    margin-top: 20px;
+
+    color: #ccccdd;
+    font-size: 0.88rem;
+}
+
+.project-link {
+    display: inline-block;
+
+    margin-top: auto;
+    padding-top: 18px;
+
+    color: #65e6c4;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
 
 /* ---------- CAREER JOURNEY ---------- */
 
