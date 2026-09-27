@@ -1,0 +1,483 @@
+/* ==================================================
+   DEB DAS - PORTFOLIO
+   My first portfolio website
+   ================================================== */
+
+
+/* ---------- BASIC PAGE ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202124;
+    background: #ffffff;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 1.05rem;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.site-header {
+    background: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 24px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #6542d7;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #6542d7;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 650px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 90px 25px;
+}
+
+.eyebrow {
+    color: #6542d7;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    max-width: 900px;
+    font-size: 4rem;
+    margin: 15px 0;
+}
+
+.hero-text {
+    max-width: 650px;
+    font-size: 1.3rem;
+    color: #666666;
+}
+
+.button {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 13px 25px;
+
+    border: 2px solid #6542d7;
+    border-radius: 30px;
+
+    color: #6542d7;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #6542d7;
+    color: white;
+}
+
+.hero-symbol {
+    margin-top: 70px;
+
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f1edff;
+    color: #6542d7;
+
+    font-family: monospace;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about {
+    background: #6542d7;
+    color: white;
+    text-align: center;
+
+    padding: 110px 25px 180px;
+}
+
+.narrow {
+    max-width: 760px;
+    margin: auto;
+}
+
+.about p {
+    color: #f1efff;
+}
+
+
+/* ---------- EXPERTISE CARDS ---------- */
+
+.expertise {
+    max-width: 1150px;
+    margin: -100px auto 0;
+    padding: 0 25px 100px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    background: white;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+}
+
+.card {
+    padding: 55px 40px;
+    text-align: center;
+
+    border-right: 1px solid #e5e5e5;
+}
+
+.card:last-child {
+    border-right: none;
+}
+
+.icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #65e6c4;
+
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+}
+
+.card h4 {
+    margin-top: 35px;
+    color: #6542d7;
+}
+
+.card ul {
+    padding: 0;
+    list-style: none;
+}
+
+
+/* ---------- SECTION HEADINGS ---------- */
+
+.section-heading {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* ---------- PROJECTS ---------- */
+
+.projects {
+    padding: 100px 30px;
+    background: #fafafa;
+}
+
+.project-grid {
+    max-width: 1100px;
+    margin: 60px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    min-height: 340px;
+    padding: 35px;
+
+    border: 1px solid #e2e2e2;
+    border-radius: 14px;
+
+    background: white;
+}
+
+.project-card.featured {
+    background: #22223b;
+    color: white;
+}
+
+.project-number {
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: 0.15;
+}
+
+.project-language {
+    color: #6542d7;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.featured .project-language {
+    color: #65e6c4;
+}
+
+.project-card h3 {
+    font-size: 1.6rem;
+}
+
+.status {
+    margin-top: 35px;
+    font-size: 0.85rem;
+    color: #65e6c4;
+}
+
+
+/* ---------- CAREER JOURNEY ---------- */
+
+.journey {
+    padding: 110px 30px;
+}
+
+.journey-line {
+    max-width: 1100px;
+    margin: 70px auto 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.journey-item {
+    text-align: center;
+}
+
+.journey-item span {
+    display: block;
+
+    color: #6542d7;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.journey-item strong {
+    display: block;
+    margin: 8px 0;
+
+    font-size: 1.15rem;
+}
+
+.journey-item small {
+    color: #777777;
+}
+
+.arrow {
+    padding: 0 25px;
+    color: #bbbbbb;
+    font-size: 1.5rem;
+}
+
+.future strong {
+    color: #6542d7;
+}
+
+
+/* ---------- LEARNING ---------- */
+
+.learning {
+    padding: 110px 25px;
+
+    background: #f4f1ff;
+
+    text-align: center;
+}
+
+.learning-tags {
+    margin-top: 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.learning-tags span {
+    padding: 9px 17px;
+
+    border: 1px solid #6542d7;
+    border-radius: 25px;
+
+    background: white;
+
+    color: #6542d7;
+    font-weight: bold;
+}
+
+
+/* ---------- PURPOSE ---------- */
+
+.purpose {
+    padding: 120px 25px;
+    text-align: center;
+}
+
+
+/* ---------- CONTACT ---------- */
+
+.contact {
+    padding: 70px 30px;
+    background: #6542d7;
+}
+
+.contact-box {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.contact-box .eyebrow {
+    color: #65e6c4;
+}
+
+.button.light {
+    color: white;
+    border-color: #65e6c4;
+}
+
+.button.light:hover {
+    background: #65e6c4;
+    color: #22223b;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    padding: 70px 25px;
+
+    text-align: center;
+
+    background: #22223b;
+    color: white;
+}
+
+footer .logo {
+    color: #65e6c4;
+}
+
+.copyright {
+    margin-top: 30px;
+
+    color: #999999;
+    font-size: 0.8rem;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 800px) {
+
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .nav-links {
+        gap: 12px;
+        font-size: 0.8rem;
+    }
+
+    .cards,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        border-right: none;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .journey-line {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+
+}
